@@ -60,7 +60,7 @@ $().ready(function(){
     timesApplier = rangy.createCssClassApplier("times");
     verdanaApllier = rangy.createCssClassApplier("verdana");
 
-    $("[data-color]").on('click', function(e){
+    $("[data-color]").on('click', function(){
         var color_id = $(this).data('color');
         colorApplier = rangy.createCssClassApplier("font-color-" + color_id);
         toggleColor();
