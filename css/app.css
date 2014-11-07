@@ -4,15 +4,18 @@
     margin-bottom: 20px;
 }
 
+pre {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
 .unselectable {
     -moz-user-select: -moz-none;
-    -khtml-user-select: none;
     -webkit-user-select: none;
-
-    /*
-      Introduced in IE 10.
-      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
-    */
     -ms-user-select: none;
     user-select: none;
 }
@@ -57,7 +60,7 @@
 <span class="verdana">Verdana</span>
 */
 .fontpicker {
-    font-size: 18px;
+    font-size: 32px;
 }
 
 .font-box {
@@ -73,7 +76,7 @@
 }
 
 .comic {
-    font-family: "Comic Sans", sans-serif;
+    font-family: "Comic Sans MS", sans-serif;
 }
 
 .georgia {

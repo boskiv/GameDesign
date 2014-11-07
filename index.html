@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Game Design</title>
-    <link rel="stylesheet" href="css/app.css"/>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
     <div id="src" class="field shadow" align="center">
-        <pre contenteditable="true" class="editable">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+        <pre contenteditable="true" class="editable" id="src-content">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
         </pre>
 
         <div class="fontpicker">
@@ -22,7 +22,7 @@
             <span class="verdana font-box">Verdana</span>
         </div>
         <div>
-            <div class="font-style fontpicker">
+            <div class="font-style fontpicker times">
                 <span id="toggleBoldButton" class="unselectable font-box bold">B</span>
                 <span id="toggleItalicButton" class="unselectable font-box italic">I</span>
                 <span id="toggleUnderlineButton" class="unselectable font-box underline" >U</span>
@@ -54,6 +54,11 @@
                 <span class="box color-23 color-box"></span>
                 <span class="box color-24 color-box"></span>
             </div>
+            <div style="margin-top: 50px">
+                <button type="button" class="btn btn-danger btn-lg">
+                    <span class="glyphicon glyphicon-fire"></span> Отжечь
+                </button>
+            </div>
         </div>
 
     </div>
@@ -64,10 +69,10 @@
         blabla
     </div>
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/rangy-official/rangy-core.js"></script>
     <script src="bower_components/rangy-official/rangy-classapplier.js"></script>
     <script src="js/app.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>
 
