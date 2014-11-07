@@ -42,6 +42,11 @@ function toggleVerdana() {
     verdanaApllier.toggleSelection();
 }
 
+var colorApplier;
+function toggleColor(){
+    colorApplier.toggleSelection();
+}
+
 $().ready(function(){
     rangy.init();
     boldApplier = rangy.createCssClassApplier("bold");
@@ -55,7 +60,11 @@ $().ready(function(){
     timesApplier = rangy.createCssClassApplier("times");
     verdanaApllier = rangy.createCssClassApplier("verdana");
 
-
+    $("[data-color]").on('click', function(e){
+        var color_id = $(this).data('color');
+        colorApplier = rangy.createCssClassApplier("font-color-" + color_id);
+        toggleColor();
+    });
 
     $("#toggleBoldButton").on('click',function(){
         toggleBold();

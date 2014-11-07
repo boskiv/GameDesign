@@ -29,33 +29,33 @@
 
             </div>
             <div class="colorpicker">
-                <span class="box color-1 color-box"></span>
-                <span class="box color-2 color-box"></span>
-                <span class="box color-3 color-box"></span>
-                <span class="box color-4 color-box"></span>
-                <span class="box color-5 color-box"></span>
-                <span class="box color-6 color-box"></span>
-                <span class="box color-7 color-box"></span>
-                <span class="box color-8 color-box"></span>
-                <span class="box color-9 color-box"></span>
-                <span class="box color-10 color-box"></span>
-                <span class="box color-11 color-box"></span>
-                <span class="box color-12 color-box"></span>
-                <span class="box color-13 color-box"></span>
-                <span class="box color-14 color-box"></span>
-                <span class="box color-15 color-box"></span>
-                <span class="box color-16 color-box"></span>
-                <span class="box color-17 color-box"></span>
-                <span class="box color-18 color-box"></span>
-                <span class="box color-19 color-box"></span>
-                <span class="box color-20 color-box"></span>
-                <span class="box color-21 color-box"></span>
-                <span class="box color-22 color-box"></span>
-                <span class="box color-23 color-box"></span>
-                <span class="box color-24 color-box"></span>
+                <span class="unselectable box color-1 color-box" data-color="1"></span>
+                <span class="unselectable box color-2 color-box" data-color="2"></span>
+                <span class="unselectable box color-3 color-box" data-color="3"></span>
+                <span class="unselectable box color-4 color-box" data-color="4"></span>
+                <span class="unselectable box color-5 color-box" data-color="5"></span>
+                <span class="unselectable box color-6 color-box" data-color="6"></span>
+                <span class="unselectable box color-7 color-box" data-color="7"></span>
+                <span class="unselectable box color-8 color-box" data-color="8"></span>
+                <span class="unselectable box color-9 color-box" data-color="9"></span>
+                <span class="unselectable box color-10 color-box" data-color="10"></span>
+                <span class="unselectable box color-11 color-box" data-color="11"></span>
+                <span class="unselectable box color-12 color-box" data-color="12"></span>
+                <span class="unselectable box color-13 color-box" data-color="13"></span>
+                <span class="unselectable box color-14 color-box" data-color="14"></span>
+                <span class="unselectable box color-15 color-box" data-color="15"></span>
+                <span class="unselectable box color-16 color-box" data-color="16"></span>
+                <span class="unselectable box color-17 color-box" data-color="17"></span>
+                <span class="unselectable box color-18 color-box" data-color="18"></span>
+                <span class="unselectable box color-19 color-box" data-color="19"></span>
+                <span class="unselectable box color-20 color-box" data-color="20"></span>
+                <span class="unselectable box color-21 color-box" data-color="21"></span>
+                <span class="unselectable box color-22 color-box" data-color="22"></span>
+                <span class="unselectable box color-23 color-box" data-color="23"></span>
+                <span class="unselectable box color-24 color-box" data-color="24"></span>
             </div>
             <div style="margin-top: 50px">
-                <button type="button" class="btn btn-danger btn-lg">
+                <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">
                     <span class="glyphicon glyphicon-fire"></span> Отжечь
                 </button>
             </div>
@@ -68,6 +68,25 @@
     <div class="field shadow" style="visibility: hidden">
         blabla
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Разогреваем печь</h4>
+                </div>
+                <div class="modal-body">
+                    Загрузка печи ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/rangy-official/rangy-core.js"></script>
