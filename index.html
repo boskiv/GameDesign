@@ -9,9 +9,7 @@
 </head>
 <body>
     <div id="src" class="field shadow" align="center">
-        <pre contenteditable="true" class="editable" id="src-content">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
-        </pre>
-
+        <pre contenteditable="true" class="editable" id="src-content">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</pre>
         <pre contenteditable="true" class="editable" id="killer">Убийца ап стену</pre>
 
         <div class="fontpicker">
@@ -57,7 +55,7 @@
                 <span class="unselectable box color-24 color-box" data-color="24"></span>
             </div>
             <div style="margin-top: 50px">
-                <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">
+                <button type="button" class="btn btn-danger btn-lg" id="fireBtn">
                     <span class="glyphicon glyphicon-fire"></span> Отжечь
                 </button>
             </div>
@@ -73,8 +71,7 @@
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                     <h4 class="modal-title" id="myModalLabel">Разогреваем печь</h4>
                 </div>
-                <div class="modal-body">
-                    Загрузка печи ...
+                <div class="modal-body" id="field">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -88,6 +85,7 @@
     <script src="bower_components/rangy-official/rangy-core.js"></script>
     <script src="bower_components/rangy-official/rangy-classapplier.js"></script>
     <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
 </body>
 </html>
 
